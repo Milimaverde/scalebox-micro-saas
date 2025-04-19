@@ -1,7 +1,7 @@
 'use client';
  
 import useMercadoPago from '@/app/hooks/useMercadoPago';
- import { useStripe } from '@/app/hooks/useStripe';
+import { useStripe } from '@/app/hooks/useStripe';
  
  export default function Payments() {
    const {
@@ -11,7 +11,7 @@ import useMercadoPago from '@/app/hooks/useMercadoPago';
    } = useStripe();
 
    const {
-    createSubscriptionMercadoPagoCheckout,
+    createMercadoPagoCheckout,
    } = useMercadoPago();
  
    return (
@@ -31,7 +31,7 @@ import useMercadoPago from '@/app/hooks/useMercadoPago';
        </button>
        <button
          className="border rounded-md px-1"
-         onClick={() => createSubscriptionMercadoPagoCheckout({
+         onClick={() => createMercadoPagoCheckout({
             testeId: '123',
             userEmail: 'teste@email.com'
          })}>

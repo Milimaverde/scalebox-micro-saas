@@ -1,6 +1,6 @@
 import { initMercadoPago } from "@mercadopago/sdk-react";
- import { useRouter } from 'next/navigation';
- import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
+import { useEffect } from "react";
 import { toast } from "react-toastify";
  
  export default function useMercadoPago() {
@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
      initMercadoPago(process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY!);
    }, []);
  
-   async function createSubscriptionMercadoPagoCheckout({
+   async function createMercadoPagoCheckout({
      testeId,
      userEmail,
    }: {
@@ -40,6 +40,6 @@ import { toast } from "react-toastify";
    }
  
    return {
-    createSubscriptionMercadoPagoCheckout,
+    createMercadoPagoCheckout,
    };
  }

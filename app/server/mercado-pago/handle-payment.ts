@@ -1,5 +1,5 @@
 import resend from "@/app/lib/resend";
- import { PaymentResponse } from "mercadopago/dist/clients/payment/commonTypes";
+import { PaymentResponse } from "mercadopago/dist/clients/payment/commonTypes";
  
  export async function handleMercadoPagoPayment(paymentData: PaymentResponse) {
    const metadata = paymentData.metadata;

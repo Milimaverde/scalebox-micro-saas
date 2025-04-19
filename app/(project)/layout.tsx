@@ -9,8 +9,8 @@ const poppins = Poppins ({
 
 export const metadata: Metadata = {
   title: "ScaleBox - Micro SaaS",
-  description: "ScaleBox é um micro SaaS construído com Next.js, NextAuth e Firebase, focado em escalabilidade e agilidade no desenvolvimento de produtos modernos e eficientes.",
-};
+  description: "ScaleBox é um micro SaaS"
+}
 
 export default function RootLayout({
   children,
@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${poppins.className} bg-gray-100 antialiased`}
-      >
+      <body className={`${poppins.className} bg-gray-100 antialiased`}>
         {children}
       </body>
     </html>
