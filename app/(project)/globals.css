@@ -1,2 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-midnight: #2B2B2B;
+  --color-buttonyellow: #F8D57E;
+  --color-buttonpurple: #BFAFF2;
+
+  --color-text600: #333333;
+}
+
+/* [data-theme="light"] {
+  --acme-canvas-color: oklch(0.21 0.034 264.665);
+} */
+
