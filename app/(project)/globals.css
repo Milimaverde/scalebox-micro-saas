@@ -5,10 +5,15 @@
   --color-buttonyellow: #F8D57E;
   --color-buttonpurple: #BFAFF2;
 
+  /* --color-purple-100: #EDE6F9; */
+  --color-purple-200: #BFAFF2;
+
+  --color-yellow-100: #FDF5DF;
+  --color-yellow-200: #F8D57E;
+
   --color-text600: #333333;
 }
 
 /* [data-theme="light"] {
   --acme-canvas-color: oklch(0.21 0.034 264.665);
 } */
-

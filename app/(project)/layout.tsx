@@ -1,21 +1,21 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Poppins } from "next/font/google";
+import type { Metadata } from 'next'
+import './globals.css'
+import { Poppins } from 'next/font/google'
 
-const poppins = Poppins ({
+const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700'],
-  subsets: ["latin"],
-});
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
-  title: "ScaleBox - Micro SaaS",
-  description: "ScaleBox é um micro SaaS"
+  title: 'ScaleBox - Micro SaaS',
+  description: 'ScaleBox é um micro SaaS'
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="pt-BR">
@@ -23,5 +23,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }
