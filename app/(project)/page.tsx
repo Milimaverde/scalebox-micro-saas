@@ -6,10 +6,13 @@ import Image from 'next/image'
 import { IconCard } from './components/iconCard'
 
 import cardsicon from './svg/cardsicon.svg'
+import purseicon from './svg/purseicon.svg'
+import coinicon from './svg/coinicon.svg'
 
 import screenshot from './images/screenshot.png'
 import logosdivider from './images/logosdividermobile.png'
 import imgdashboard from './images/imagedash.png'
+import { CommentsCard } from './components/commentsCard'
 
 export const metadata: Metadata = {
   title: 'ScaleBox - Micro SaaS',
@@ -73,6 +76,25 @@ export default function Home() {
           title="Scalability"
           description="Built with Next.js and Firebase for high performance."
         />
+        <IconCard
+          icon={coinicon}
+          title="No payment fee"
+          description="Transfer your payment all over the world with no payment fee."
+        />
+        <IconCard
+          icon={purseicon}
+          title="All in one place"
+          description="The right place to keep your credit and debit cards, boarding passes & more."
+        />
+      </section>
+      <section className="flex flex-col items-center mt-16">
+        <CommentsCard
+          image={"https://github.com/diego3g.png"}
+          descriptionImage="User 1"
+          name="Alice Johnson"
+          comments="“Wallet is a great product! All of my most important information is there - credit cards, transit cards, boarding passes, tickets, and more. And I don't need to worry because it's all in one place! thanks!”"
+        />
+       
       </section>
     </>
   )
