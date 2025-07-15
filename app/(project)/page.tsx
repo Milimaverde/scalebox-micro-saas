@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 import { IconCard } from './components/iconCard'
+import { CommentsCard } from './components/commentsCard'
 
 import cardsicon from './svg/cardsicon.svg'
 import purseicon from './svg/purseicon.svg'
@@ -12,7 +13,8 @@ import coinicon from './svg/coinicon.svg'
 import screenshot from './images/screenshot.png'
 import logosdivider from './images/logosdividermobile.png'
 import imgdashboard from './images/imagedash.png'
-import { CommentsCard } from './components/commentsCard'
+import gif from './images/GIF.png'
+import { Button } from './components/buttons'
 
 export const metadata: Metadata = {
   title: 'ScaleBox - Micro SaaS',
@@ -37,12 +39,7 @@ export default function Home() {
             modern and efficient products.
           </p>
           <Link href="login">
-            <button
-              type="submit"
-              className="rounded-2xl px-8 py-4 bg-buttonyellow text-midnight text-xl cursor-pointer"
-            >
-              Ver Aplicação
-            </button>
+            <Button className='py-4' color='yellow'>Ver Apilicação</Button>
           </Link>
         </div>
         <div className="flex justify-center rounded-2xl mt-10 bg-text600">
@@ -57,7 +54,7 @@ export default function Home() {
       <div className="flex w-full justify-center border-y-1 border-white/20 py-12">
         <Image
           src={logosdivider}
-          alt="ScaleBox Template"
+          alt="ScaleBox Logos Divider"
           width={500}
           height={500}
         ></Image>
@@ -90,12 +87,56 @@ export default function Home() {
       <section className="flex flex-col items-center mt-16">
         <CommentsCard
           image={"https://github.com/diego3g.png"}
-          descriptionImage="User 1"
           name="Alice Johnson"
           comments="“Wallet is a great product! All of my most important information is there - credit cards, transit cards, boarding passes, tickets, and more. And I don't need to worry because it's all in one place! thanks!”"
         />
        
       </section>
+      <section className="mt-16 md:mt-32 mt:between mt:flex items-center mt:justify-between mb-16">
+        <div className="flex flex-col gap-10 items-center">
+          <h1 className="text-white text-center text-4xl font-semibold leading-normal">
+            Questions? <br/>Let’s talk 
+          </h1>
+          <p className="justify-center text-lg text-center text-white/40 leading-8 ">
+            Contact us through our 24/7 live chat. <br/>We’re always happy to help!
+          </p>
+          <Link href="login">
+            <Button className='py-4' color='yellow'>Ver Apilicação</Button>
+          </Link>
+        </div>
+        <div className="flex justify-center rounded-2xl mt-10 bg-text600">
+          <Image
+            src={gif}
+            alt="ScaleBox Template"
+            width={500}
+            height={500}
+          ></Image>
+        </div>
+      </section>
+      <footer className="border-t-1 border-white/20 py-12">
+      <h3>Wallet</h3>
+        <div className=" gap-4 mt-4">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="px-4 py-2 rounded-xl bg-text600 text-white w-80"
+          />
+          <Button className="w-full py-2 rounded-2xl" color='purple'>Subscribe</Button>
+        </div>
+        <div className='flex flex-col gap-5 text-white text-lg font-bold mt-10'>
+          <Link href="/">
+            Terms of Use
+          </Link>
+          <Link href="/">
+            Cookies Policy
+          </Link>
+          <Link href="/">
+            Cookies Policy
+          </Link>
+          <span>© 2023 ScaleBox.</span>
+        </div>
+        
+      </footer>
     </>
   )
 }

@@ -1,13 +1,21 @@
-export function Button({
+export function  Button({
+
   children,
-  className = '',
-  color = 'yellow, // Default color',
-  ...props
-}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+  color = 'yellow',
+  className = ''
+}: {
+  children: React.ReactNode
+  color?: 'yellow' | 'purple'
+  className?: string
+}) {
+
+  const colorVariants = {
+    yellow: "bg-buttonyellow",
+    purple: "bg-buttonpurple",
+  }
   return (
     <button
-      className={`rounded-2xl px-8 py-4 text-midnight text-xl cursor-pointer ${className} bg-button${color} hover:bg-button${color}hover active:bg-button${color}active focus:bg-button${color}focus transition-colors duration-200 ease-in-out`}
-      {...props}
+      className={`rounded-2xl px-8  text-midnight text-lg cursor-pointer ${colorVariants[color]} ${className}`}
     >
       {children}
     </button>
