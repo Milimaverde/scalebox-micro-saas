@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import { IconCard } from './components/iconCard'
 import { CommentsCard } from './components/commentsCard'
+import { Button } from './components/buttons'
 
 import cardsicon from './svg/cardsicon.svg'
 import purseicon from './svg/purseicon.svg'
@@ -14,7 +15,6 @@ import screenshot from './images/screenshot.png'
 import logosdivider from './images/logosdividermobile.png'
 import imgdashboard from './images/imagedash.png'
 import gif from './images/GIF.png'
-import { Button } from './components/buttons'
 
 export const metadata: Metadata = {
   title: 'ScaleBox - Micro SaaS',
@@ -25,15 +25,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <header className="flex py-5 gap-5">
-        <h3 className="text-white text-2xl font-semibold">ScaleBox</h3>
+      <header className="flex py-5">
+        <h3 className="text-2xl font-semibold text-white">ScaleBox</h3>
       </header>
-      <section className="mt-16 md:mt-32 mt:between mt:flex items-center mt:justify-between mb-16">
+      <section className="my-16">
         <div className="flex flex-col gap-10 items-center">
-          <h1 className="text-white text-center text-4xl font-semibold leading-normal">
+          <h1 className="text-4xl font-semibold text-center  leading-normal text-white ">
             SaaS Landing Page Template
           </h1>
-          <p className="text-lg text-center text-white/40 leading-8 ">
+          <p className="text-lg text-center leading-8 text-white/40">
             ScaleBox is a micro SaaS template built with Next.js, NextAuth and
             Firebase, focused on scalability and agility in the development of
             modern and efficient products.
@@ -114,12 +114,13 @@ export default function Home() {
         </div>
       </section>
       <footer className="border-t-1 border-white/20 py-12">
-      <h3>Wallet</h3>
-        <div className=" gap-4 mt-4">
+      <h3 className="text-2xl font-semibold text-white mb-7.5">Wallet</h3>
+        <div className="">
+          <span className="mb-2.5 text-lg text-white">Updates right to your Inbox</span>
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-4 py-2 rounded-xl bg-text600 text-white w-80"
+            className="mb-5 px-4 py-2 rounded-xl bg-text600 text-white w-80"
           />
           <Button className="w-full py-2 rounded-2xl" color='purple'>Subscribe</Button>
         </div>
@@ -135,7 +136,6 @@ export default function Home() {
           </Link>
           <span>© 2023 ScaleBox.</span>
         </div>
-        
       </footer>
     </>
   )
