@@ -27,7 +27,7 @@ export function Button({
 
   return (
     <button
-      className={`rounded-2xl px-8 text-midnight text-lg cursor-pointer ${colorVariants[color]} ${hoverColorVariants[hoverColor]} transition-all duration-150 ${className}`}
+      className={`rounded-2xl px-4 w-44 text-midnight text-lg cursor-pointer ${colorVariants[color]} ${hoverColorVariants[hoverColor]} transition-all duration-150 ${className}`}
     >
       {children}
     </button>

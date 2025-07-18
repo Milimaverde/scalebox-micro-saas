@@ -29,7 +29,7 @@ export default function Home() {
       <header className="flex py-5 justify-between">
         <h3 className="text-2xl font-semibold text-white">ScaleBox</h3>
           <Link href="login">
-            <Button className='py-4' color='purple' hoverColor='hoverpurple'>Login</Button>
+            <Button className='py-3 px-6 hidden sm:block' color='purple' hoverColor='hoverpurple'>Login</Button>
           </Link>
       </header>
       <div className="md:max-w-5xl md:justify-center md:mx-auto">
@@ -42,7 +42,7 @@ export default function Home() {
               ScaleBox é um micro SaaS focado em escalabilidade e agilidade no desenvolvimento de produtos modernos e eficientes
             </p>
             <Link href="login">
-              <Button className='py-4' color='yellow' hoverColor='hoveryellow'>Ver Apilicação</Button>
+              <Button className='py-3' color='yellow' hoverColor='hoveryellow'>Ver Apilicação</Button>
             </Link>
           </div>
           <div className="flex justify-center rounded-2xl mt-10 bg-text600">
@@ -108,7 +108,7 @@ export default function Home() {
               Contact us through our 24/7 live chat. <br/>We’re always happy to help!
             </p>
             <Link href="login">
-              <Button className='py-4' color='yellow' hoverColor='hoveryellow'>Ver Apilicação</Button>
+              <Button className='py-3' color='yellow' hoverColor='hoveryellow'>Ver Apilicação</Button>
             </Link>
           </div>
           <div className="flex justify-center rounded-2xl mt-10 bg-text600">
@@ -122,9 +122,9 @@ export default function Home() {
         </section>
       </div>
       <footer className="border-t-1 border-white/20 py-12">
-        <h3 className="text-2xl font-semibold text-white mb-7.5 md:mb-0">Wallet</h3>
-        <div className='flex flex-col-reverse md:flex-row md:justify-between'>
-          <div className='flex flex-col md:flex-row gap-5 text-white text-lg font-bold mt-10 md:items-end'>
+        <h3 className="text-2xl font-semibold text-white mb-7.5 md:mb-5 lg:mb-0 ">Wallet</h3>
+        <div className='flex flex-col-reverse lg:flex-row md:justify-between'>
+          <div className='flex flex-col md:flex-row gap-3 text-white text-lg font-bold mt-10 md:items-end'>
             <Link href="/">
               Terms of Use
             </Link>
