@@ -1,11 +1,7 @@
 import { handleAuth } from "@/app/actions/handle-auth";
 import { auth } from "@/app/lib/auth";
-import Image from "next/image";
 import { redirect } from "next/navigation";
-import imagedash from "@/app/(project)/images/imgdashboard.gif"
-import imgdashboard from "./images/imgdashboard.gif";
 import Link from "next/link";
-import { Button } from "../components/buttons";
 
 export default async function Login() {
   const session = await auth();

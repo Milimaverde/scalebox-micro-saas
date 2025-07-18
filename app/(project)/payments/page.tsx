@@ -2,7 +2,6 @@
  
 import { useMercadoPago } from '@/app/hooks/useMercadoPago';
 import { useStripe } from '@/app/hooks/useStripe';
-import { Button } from '../components/buttons';
 import Link from 'next/link';
  
  export default function Payments() {
