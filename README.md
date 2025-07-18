@@ -14,7 +14,7 @@ A aplicação foi construída com base em um template gratuito disponível no Fi
 👉 [Documentação Notion - ScaleBox](https://solid-orchid-835.notion.site/ScaleBox-Micro-SaaS-1d511734630680739be0d9d97a6c0839)
 
 🎨 Template Figma utilizado:  
-👉 [SaaS Landing Page Template no Figma](https://www.figma.com/design/Dg9XCDujF5OmCUpFuFEUjm/SaaS-Landing-Page-Template---Landing-Page-Template-ready-to-export-to-HTML---Landing-page-for-SaaS--Community-?m=auto&t=VcOnkzWgHK3fM0TQ-6)
+👉 [SaaS Landing Page Template no Figma](https://www.figma.com/files/team/1333840655971093764/resources/community/file/1091046863319888542?fuid=1333840653073319336)
 
 ---
 
@@ -107,5 +107,5 @@ Acesse: [http://localhost:3000](http://localhost:3000)
 
 ## 🙌 Créditos
 
-- Template Figma por [Community Creator no Figma](https://www.figma.com/community/file/1251045301968888259)
+- Template Figma por [@Anima](https://www.figma.com/@anima)
 - Desenvolvido com ♥ por [Milimaverde](https://github.com/Milimaverde)
