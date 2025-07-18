@@ -12,7 +12,8 @@ import purseicon from './svg/purseicon.svg'
 import coinicon from './svg/coinicon.svg'
 
 import screenshot from './images/screenshot.png'
-import logosdivider from './images/logosdividermobile.png'
+import logosdividermobile from './svg/logosdividermobile.svg'
+import logosdividerweb from './svg/logosdividerweb.svg'
 import imgdashboard from './images/imagedash.png'
 import gif from './images/GIF.png'
 
@@ -28,15 +29,13 @@ export default function Home() {
       <header className="flex py-5">
         <h3 className="text-2xl font-semibold text-white">ScaleBox</h3>
       </header>
-      <section className="my-16">
-        <div className="flex flex-col gap-10 items-center">
-          <h1 className="text-4xl font-semibold text-center  leading-normal text-white ">
+      <section className="my-16 md:flex md:items-center md:justify-between md:flex-row md:gap-10">
+        <div className="flex flex-col gap-10 md:gap-5 lg:gap-10 items-center md:items-start md:max-w-2/4 md:content-between">
+          <h1 className=" font-semibold text-center text-4xl md:text-start lg:text-6xl leading-normal text-white ">
             SaaS Landing Page Template
           </h1>
-          <p className="text-lg text-center leading-8 text-white/40">
-            ScaleBox is a micro SaaS template built with Next.js, NextAuth and
-            Firebase, focused on scalability and agility in the development of
-            modern and efficient products.
+          <p className="text-lg text-center md:text-start leading-8 text-white/40">
+            ScaleBox é um micro SaaS focado em escalabilidade e agilidade no desenvolvimento de produtos modernos e eficientes
           </p>
           <Link href="login">
             <Button className='py-4' color='yellow'>Ver Apilicação</Button>
@@ -44,27 +43,32 @@ export default function Home() {
         </div>
         <div className="flex justify-center rounded-2xl mt-10 bg-text600">
           <Image
+            className="lg:max-w-md 2xl:max-w-lg"
             src={screenshot}
             alt="ScaleBox Template"
             width={500}
-            height={500}
           ></Image>
         </div>
       </section>
-      <div className="flex w-full justify-center border-y-1 border-white/20 py-12">
+      <div className="flex justify-center border-y-1 border-white/20 py-12">
         <Image
-          src={logosdivider}
-          alt="ScaleBox Logos Divider"
-          width={500}
-          height={500}
+          className="block sm:hidden"
+          src={logosdividermobile}
+          alt="ScaleBox Logos Divider Mobile"
+          width={250}
+          height={250}
         ></Image>
+        <Image
+          className="hidden sm:block md:max-w-2xl lg:max-w-3xl 2xl:max-w-4xl"
+          src={logosdividerweb}
+          alt="ScaleBox Logos Divider Web"
+        ></Image>
+
       </div>
       <div className="flex justify-center rounded-md my-14 bg-yellow-100">
         <Image
           src={imgdashboard}
           alt="ScaleBox Template"
-          width={500}
-          height={500}
         ></Image>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
@@ -90,14 +94,13 @@ export default function Home() {
           name="Alice Johnson"
           comments="“Wallet is a great product! All of my most important information is there - credit cards, transit cards, boarding passes, tickets, and more. And I don't need to worry because it's all in one place! thanks!”"
         />
-       
       </section>
-      <section className="mt-16 md:mt-32 mt:between mt:flex items-center mt:justify-between mb-16">
-        <div className="flex flex-col gap-10 items-center">
-          <h1 className="text-white text-center text-4xl font-semibold leading-normal">
+      <section className="my-16 md:flex md:items-center md:justify-between md:flex-row md:gap-10">
+        <div className="flex flex-col gap-10 md:gap-5 lg:gap-10 items-center md:items-start md:content-between">
+          <h1 className=" font-semibold text-center text-4xl md:text-start lg:text-6xl leading-normal text-white">
             Questions? <br/>Let’s talk 
           </h1>
-          <p className="justify-center text-lg text-center text-white/40 leading-8 ">
+          <p className="text-lg text-center md:text-start leading-8 text-white/40">
             Contact us through our 24/7 live chat. <br/>We’re always happy to help!
           </p>
           <Link href="login">
@@ -106,35 +109,39 @@ export default function Home() {
         </div>
         <div className="flex justify-center rounded-2xl mt-10 bg-text600">
           <Image
+            className=""
             src={gif}
             alt="ScaleBox Template"
             width={500}
-            height={500}
           ></Image>
         </div>
       </section>
       <footer className="border-t-1 border-white/20 py-12">
-      <h3 className="text-2xl font-semibold text-white mb-7.5">Wallet</h3>
-        <div className="">
-          <span className="mb-2.5 text-lg text-white">Updates right to your Inbox</span>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="mb-5 px-4 py-2 rounded-xl bg-text600 text-white w-80"
-          />
-          <Button className="w-full py-2 rounded-2xl" color='purple'>Subscribe</Button>
-        </div>
-        <div className='flex flex-col gap-5 text-white text-lg font-bold mt-10'>
-          <Link href="/">
-            Terms of Use
-          </Link>
-          <Link href="/">
-            Cookies Policy
-          </Link>
-          <Link href="/">
-            Cookies Policy
-          </Link>
-          <span>© 2023 ScaleBox.</span>
+        <h3 className="text-2xl font-semibold text-white mb-7.5 md:mb-0">Wallet</h3>
+        <div className='flex flex-col-reverse md:flex-row md:justify-between'>
+          <div className='flex flex-col md:flex-row gap-5 text-white text-lg font-bold mt-10 md:items-end'>
+            <Link href="/">
+              Terms of Use
+            </Link>
+            <Link href="/">
+              Cookies Policy
+            </Link>
+            <Link href="/">
+              Cookies Policy
+            </Link>
+            <span>© 2023 ScaleBox.</span>
+          </div>
+          <div className="md:flex md:flex-row md:items-end md:gap-6">
+              <div className="flex flex-col gap-2 md:gap-6">
+                <label className="text-lg text-white">Updates right to your Inbox</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="px-5 py-2 rounded-xl bg-text600 text-white"
+                />
+              </div>
+              <Button className="w-full md:w-auto py-2 mt-4 rounded-2xl" color='purple'>Subscribe</Button>
+          </div>
         </div>
       </footer>
     </>

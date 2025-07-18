@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect } from "react";
 import { toast } from "react-toastify";
  
- export default function useMercadoPago() {
+export function useMercadoPago() {
    const router = useRouter();
  
    useEffect(() => {
@@ -42,4 +42,4 @@ import { toast } from "react-toastify";
    return {
     createMercadoPagoCheckout,
    };
- }
+}

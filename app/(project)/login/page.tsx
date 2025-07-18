@@ -8,6 +8,7 @@ export default async function Login() {
   if (session) {
     redirect("/dashboard");
   }
+  
   return (
     <form action={handleAuth}>
       <button type="submit">Signin with Google</button>

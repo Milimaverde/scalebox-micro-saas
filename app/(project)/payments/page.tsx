@@ -1,6 +1,6 @@
 'use client';
  
-import useMercadoPago from '@/app/hooks/useMercadoPago';
+import { useMercadoPago } from '@/app/hooks/useMercadoPago';
 import { useStripe } from '@/app/hooks/useStripe';
  
  export default function Payments() {

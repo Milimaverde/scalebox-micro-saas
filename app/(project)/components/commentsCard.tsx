@@ -3,22 +3,19 @@ import React from 'react'
 
 import star from '../svg/star.svg'
 
-export function CommentsCard({
-  image,
-  name,
-  comments
- 
-}: {
+interface CommentsCardProps {
   image: string
   name: string
   comments: string
-  
 }
-) {
+
+export function CommentsCard(props: CommentsCardProps) {
+  const { image, name, comments } = props
+  
   return (
-    <div className="bg-purple-200 px-8 pb-16 rounded-xl shadow-md flex flex-col items-center text-center">
-      <p className="text-2xl/10 font-semibold py-16">{comments}</p>
-      <div className="flex ">
+    <div className="bg-purple-200 px-8 md:px-16 lg:px-40 pb-16 rounded-xl shadow-md flex flex-col items-center md:items-start text-center w-full">
+        <p className="text-2xl/10 text-midnight font-semibold py-16 md:text-left ">{comments}</p>
+      <div className="flex">
         <Image
           src={image}
           alt='estrelas'

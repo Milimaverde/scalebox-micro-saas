@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 
-export function IconCard({
-  icon,
-  title,
-  description
-}: {
+interface IconCardProps {
   icon: string
   title: string
   description: string
-}) {
+}
+
+export function IconCard(props: IconCardProps) {
+  const { icon, title, description } = props
+
   return (
     <div className="flex flex-col items-center justify-center p-4 ">
       <div className="text-4xl text-yellow-500 mb-12">
@@ -20,11 +20,3 @@ export function IconCard({
     </div>
   )
 }
-// Usage example:
-// <IconCard
-//   icon={<YourIconComponent />}
-//   title="Card Title"
-//   description="Card Description"
-// />
-// This component can be used to create a card with an icon, title, and description.
-// You can customize the styles and structure as needed.

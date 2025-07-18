@@ -1,7 +1,7 @@
 import { loadStripe, Stripe } from "@stripe/stripe-js";
 import { useEffect, useState } from "react";
  
- export function useStripe() {
+export function useStripe() {
    const [stripe, setStripe] = useState<Stripe | null>(null);
  
    useEffect(() => {

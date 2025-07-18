@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Poppins } from 'next/font/google'
+import { ReactNode } from 'react'
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700'],
@@ -15,11 +16,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${poppins.className} bg-midnight antialiased p-4 md:p-0 md:max-w-7xl md:justify-center md:mx-auto`}>
+      <body className={`${poppins.className} bg-midnight antialiased p-4 md:max-w-7xl md:justify-center md:mx-auto`}>
         {children}
       </body>
     </html>
