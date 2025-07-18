@@ -1,14 +1,14 @@
 import { handleAuth } from "@/app/actions/handle-auth";
- import { auth } from '@/app/lib/auth';
+import { auth } from '@/app/lib/auth';
 import Link from "next/link";
- import { redirect } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import { Button } from "../components/buttons";
  
  export default async function Dashboard() {
    const session = await auth();
  
    if (!session) {
-     redirect('/login');
+     redirect('/login')
    }
  
    return (
@@ -28,11 +28,11 @@ import { Button } from "../components/buttons";
      </div>
       </header>
     <section className="my-16 flex flex-col justify-center md:max-w-5xl md:mx-auto items-center">
-          <h1 className="font-semibold text-center text-4xl lg:text-6xl leading-normal text-white mb-6 ">
+          <h1 className="font-semibold text-center text-4xl lg:text-6xl leading-normal text-white mb-6">
              Protected Dashboard
           </h1>
           <p className="text-lg text-center leading-8 text-white/40">
-              ScaleBox, aqui você está logado com o Google e pode efetuar pagamentos com Stripe e Mercado Pago clicando no botão 'Pagamentos' ou deslogar clicando em 'Logout'.
+              ScaleBox, aqui você está logado com o Google e pode efetuar pagamentos com Stripe e Mercado Pago clicando no botão Pagamentos ou deslogar clicando em Logout.
           </p>
        <Link href="/payments">
        <Button className="mt-10 py-3 px-6" color='purple' hoverColor='hoverpurple'>Pagamentos</Button>
