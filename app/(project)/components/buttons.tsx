@@ -21,13 +21,13 @@ export function Button({
     purple: "bg-buttonpurple"
   }
   const hoverColorVariants = {
-    hoveryellow: "bg-buttonyellow-hover",
-    hoverpurple: "bg-buttonpurple-hover"
+    hoveryellow: "hover:bg-buttonyellow-hover",
+    hoverpurple: "hover:bg-buttonpurple-hover"
   }
 
   return (
     <button
-      className={`rounded-2xl px-8  text-midnight text-lg cursor-pointer ${colorVariants[color]} hover:${hoverColorVariants[hoverColor]}  ${className}`}
+      className={`rounded-2xl px-8 text-midnight text-lg cursor-pointer ${colorVariants[color]} ${hoverColorVariants[hoverColor]} transition-all duration-150 ${className}`}
     >
       {children}
     </button>
