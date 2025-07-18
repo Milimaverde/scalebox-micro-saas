@@ -38,7 +38,7 @@ export default function Home() {
             ScaleBox é um micro SaaS focado em escalabilidade e agilidade no desenvolvimento de produtos modernos e eficientes
           </p>
           <Link href="login">
-            <Button className='py-4' color='yellow'>Ver Apilicação</Button>
+            <Button className='py-4' color='yellow' hoverColor='hoveryellow'>Ver Apilicação</Button>
           </Link>
         </div>
         <div className="flex justify-center rounded-2xl mt-10 bg-text600">
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col items-center mt-16">
         <CommentsCard
-          image={"https://github.com/diego3g.png"}
+          image={"https://github.com/Milimaverde.png"}
           name="Alice Johnson"
           comments="“Wallet is a great product! All of my most important information is there - credit cards, transit cards, boarding passes, tickets, and more. And I don't need to worry because it's all in one place! thanks!”"
         />
@@ -104,7 +104,7 @@ export default function Home() {
             Contact us through our 24/7 live chat. <br/>We’re always happy to help!
           </p>
           <Link href="login">
-            <Button className='py-4' color='yellow'>Ver Apilicação</Button>
+            <Button className='py-4' color='yellow' hoverColor='hoveryellow'>Ver Apilicação</Button>
           </Link>
         </div>
         <div className="flex justify-center rounded-2xl mt-10 bg-text600">
@@ -140,7 +140,7 @@ export default function Home() {
                   className="px-5 py-2 rounded-xl bg-text600 text-white"
                 />
               </div>
-              <Button className="w-full md:w-auto py-2 mt-4 rounded-2xl" color='purple'>Subscribe</Button>
+              <Button className="w-full md:w-auto py-2 mt-4 rounded-2xl" color='purple' hoverColor='hoverpurple'>Subscribe</Button>
           </div>
         </div>
       </footer>

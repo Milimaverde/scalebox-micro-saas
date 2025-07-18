@@ -5,13 +5,18 @@
   --color-buttonyellow: #F8D57E;
   --color-buttonpurple: #BFAFF2;
 
+  --color-buttonyellow-hover: #E8BF59;
+  --color-buttonpurple-hover: #A490E5;
+
   /* --color-purple-100: #EDE6F9; */
-  --color-purple-200: #BFAFF2;
 
   --color-yellow-100: #FDF5DF;
+
   --color-yellow-200: #F8D57E;
+  --color-purple-200: #BFAFF2;
 
   --color-text600: #333333;
+
 }
 
 /* [data-theme="light"] {
